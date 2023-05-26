@@ -13,7 +13,7 @@ process.on("uncaughtException", (err) => {
 
 dotenv.config({ path: "backend/config/config.env" });
 
-connectDB();
+connectDB(process.env.MONGO_URI);
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,

@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 
-const connectDB = () => {
+const connectDB = (url) => {
+  mongoose.set("strictQuery", true);
+
   mongoose
-    .connect(process.env.MONGO_URI)
+    .connect(url)
     .then(() => {
       console.log("Mongodb connected successfully");
     })
