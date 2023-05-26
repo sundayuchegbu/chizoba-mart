@@ -29,6 +29,7 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.2.4",
     "nodemailer": "^6.7.2",
+    "react-speech-kit": "^3.0.1",
     "stripe": "^9.13.0",
     "validator": "^13.7.0"
   },
