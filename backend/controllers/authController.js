@@ -226,6 +226,7 @@ const authCtrl = {
     }
 
     // Remove avatar from cloudinary -TODO
+    // Remove avata from cloudinary
 
     await user.remove();
 
